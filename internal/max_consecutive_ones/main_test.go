@@ -22,7 +22,7 @@ func TestExamples(t *testing.T) {
 	for i, example := range examples {
 		output := findMaxConsecutiveOnes(example.Input)
 		if example.Output != output {
-			t.Errorf("example %03d | expected %d, got %d", i+1, example.Output, output)
+			t.Errorf("example %3d | expected %d, got %d", i+1, example.Output, output)
 		}
 	}
 }
