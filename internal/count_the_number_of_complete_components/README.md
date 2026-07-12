@@ -1,6 +1,6 @@
 # Count the Number of Complete Components (medium)
 
-TODO FIX THIS - MAX SCORE OF 3216/3356
+TODO fix this - terrible runtime
 
 [LeetCode](https://leetcode.com/problems/count-the-number-of-complete-components/description/?envType=daily-question&envId=2026-07-11)
 

@@ -44,34 +44,3 @@ func TestExamples(t *testing.T) {
 	}
 }
 
-func TestInGraph(t *testing.T) {
-	type Example struct {
-		InputGraph [][]int
-		InputEdge  []int
-		Output     bool
-	}
-
-	examples := []Example{
-		{
-			InputGraph: [][]int{{3, 4}, {1, 4}},
-			InputEdge:  []int{2, 3},
-			Output:     true,
-		},
-		{
-			InputGraph: [][]int{{3, 4}, {1, 4}, {2, 3}},
-			InputEdge:  []int{2, 3},
-			Output:     true,
-		},
-		{
-			InputGraph: [][]int{},
-			InputEdge:  []int{2, 3},
-			Output:     false,
-		},
-	}
-	for i, example := range examples {
-		actualOutput := inGraph(example.InputGraph, example.InputEdge)
-		if example.Output != actualOutput {
-			t.Errorf("example %3d | expected %v, got %v", i+1, example.Output, actualOutput)
-		}
-	}
-}
